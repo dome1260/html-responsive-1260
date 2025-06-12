@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      font-size: 14px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      left: 0;
+      padding: 8px 16px;
+      background-color: black;
+      color: white;
+    }
+
+    .banner {
+      width: 100%;
+      height: 250px;
+      background-color: grey;
+      color: white;
+      padding: 16px;
+      font-size: 1.5em;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    .content {
+      display: flex;
+      margin-bottom: 16px;
+      gap: 16px
+    }
+
+    .content__image {
+      width: 400px;
+      height: 250px;
+      background-color: lightblue;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 599px)  {
+      .content {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 415px)  {
+      .content {
+        flex-direction: column;
+      }
+
+      .content__image {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    Navbar
+  </header>
+
+  <div style="font-size: 20px">
+    <section class="banner">
+      Banner
+    </section>
+  </div>
+
+  <section class="container">
+    <div class="content">
+      <div>
+        <div class="content__image">
+        </div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam libero accusamus quasi voluptas rem culpa minima voluptate, minus doloremque magni animi quos nemo, ut reiciendis deleniti iure laudantium possimus? Quaerat.
+      </div>
+    </div>
+    <div class="content">
+      <div>
+        <div class="content__image">
+        </div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam libero accusamus quasi voluptas rem culpa minima voluptate, minus doloremque magni animi quos nemo, ut reiciendis deleniti iure laudantium possimus? Quaerat.
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
